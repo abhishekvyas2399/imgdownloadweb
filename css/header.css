@@ -1,0 +1,103 @@
+#header a {
+    float: left;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 10px 0px 10px 0px;
+    padding: 20px 15px 20px 15px;
+    cursor: pointer;
+    color: white;
+}
+#header a:hover {
+    color: black;
+}
+
+#header img {
+    float: left;
+    padding: 25px 24px 17px 70px;
+    cursor: pointer;
+}
+
+#header_right_1,
+#header_right_2,
+#header_right_3 {
+    float: right !important;
+    margin: 20px 10px 20px 22px !important;
+    padding: 10px 15px 10px 31px !important;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#header_right_1 {
+    margin: 15px 82px 15px 10px !important;
+    padding: 15px 46px 15px 46px !important;
+    border-radius: 30px;
+    background: white;
+    color: rgba(78, 24, 221, 1) !important;
+}
+#header_right_2:hover{
+    color:black;
+}
+#header_right_3{
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin: 10px 0px 10px 0px !important;
+    padding: 20px 15px 20px 0px !important;
+}
+
+#header_right_1:hover {
+    background: rgb(53, 243, 180);
+    color: white !important;
+}
+#img_blink{
+    width: 240px;
+    /* background-color: rgba(78, 24, 221, 1); */
+    float: left;
+    padding: 19px 24px 4.8px 70px;
+    margin: 0;
+    cursor: pointer;
+}
+#img_blink img{
+    width: 50px;
+    /* width: 240px; */
+    margin: 0;
+    padding: 0;
+}
+#img_blink span{
+    float: left;
+    color: white;
+    font-size: 22px;
+    margin: 8px 7px;
+    letter-spacing: 3px;
+}
+@media screen and  (max-width:1200px) {
+    #header a {
+        display: none;
+    }
+    #header_right_3{
+        display: block !important;
+    }
+}
+@media screen and (max-width:430px) {
+    #img_blink{
+        float: left;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 190px;
+        padding: 19px 7px 4.8px 15px;
+    }
+    #img_blink img{
+        width: 50px;
+        margin: 0px;
+        padding: 0px;
+    }
+    #img_blink span{
+        font-size: 22px;
+        margin: 8px 3px;
+        letter-spacing: 1px;
+    }
+    /* #powtoonlogo {
+        width: 190px;
+    } */
+}

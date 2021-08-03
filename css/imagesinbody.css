@@ -1,0 +1,185 @@
+#body_img_heading{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#body_img_heading p{
+    color: #331877;
+    width: 506px;
+    font-size: 40px;
+    font-weight: 600;
+}
+#body_img_heading span{
+    color: #331877;
+    width: 500px;
+}
+@media screen and (max-width:600px) {
+    #body_img_heading p{
+        width: 300px;
+        font-size: 31px;
+    }
+    #body_img_heading span{
+        width: 300px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+#body_images_container{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.img_box{
+    text-align: center;
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+    padding: auto;
+    box-shadow: 0px 0px 5px black;
+    margin-bottom: 20px;
+}
+.img_box img{
+    width: 300px;
+    height: 200px;
+    /* opacity: 0.8; */
+    filter: blur(3px);
+    background: purple;
+}
+.img_box p{
+    position: relative;
+    bottom: 50px;
+    right: 90px;
+    font-weight: 600;
+    color: white;
+    background: black;
+    width: fit-content;
+    margin-left: 130px;
+    padding: 4px 8px;
+}
+.top_hr{
+    width: 295px;
+    position: relative;
+    bottom: 57px;
+    left: 28px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes top_right {
+    from{
+        left: 28px;
+    }   
+    to{
+        left: 300px;
+    }
+}
+@keyframes top_left {
+    from{
+        left: 300px;
+    }   
+    to{
+        left: 28px;
+    }
+}
+
+.bottom_hr{
+    width: 125px;
+    position: relative;
+    left: -10px;
+    bottom: 43px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes bottom_left {
+    from{
+        left: -10px;
+    }   
+    to{
+        left: -150px;
+    }
+}
+@keyframes bottom_right {
+    from{
+        left: -150px;
+    }   
+    to{
+        left: -10px;
+    }
+}
+.left_hr{
+    width: 199px;
+    position: relative;
+    bottom: 125px;
+    right: 83px;
+    transform:rotate(90deg);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes left_top {
+    from{
+        bottom: 125px;
+    }   
+    to{
+        bottom: 406px;
+    }
+}
+@keyframes left_bottom {
+    from{
+        bottom: 406px;
+    }   
+    to{
+        bottom: 125px;
+    }
+}
+.right_hr{
+    width: 40px;
+    position: relative;
+    bottom: 55px;
+    left: 110px;
+    transform:rotate(90deg);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes disappear {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    } 
+}
+
+
+@media screen and (max-width:1296px) {
+    #body_images_container{
+        grid-template-columns: repeat(3,33.3%);
+    }
+}
+@media screen and (max-width:960px) {
+    #body_images_container{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+@media screen and (max-width:650px) {
+    #body_images_container{
+        grid-template-columns: 100%;
+    }
+}

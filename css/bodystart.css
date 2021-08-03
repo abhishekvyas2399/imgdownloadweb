@@ -1,0 +1,133 @@
+#body_box1 {
+    padding-top: 210px;
+    height: 500px;
+    background: url(https://res.cloudinary.com/powtoon-dev/image/upload/f_auto,q_auto/v1589361763/site/home%20page/homepage-banner.jpg) no-repeat;
+    background-position:50% ;
+    /* background: rgba(78, 24, 221, 1); */
+}
+#box1_left{
+    padding-top: 0px;
+    margin-left: 80px;
+    width: 480px;
+    animation-name:goright;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    float: left;
+}
+@keyframes goright {
+    0%{
+        padding-left: 10px;
+        margin-left: 0px;
+    }
+    100%{
+        padding-left: 80px;
+        margin-left: 80px;
+    }
+}
+#box1_fix_content{
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+#cursor_blink{
+    font-size: 40px;
+    color: white;
+    animation-name: cursorblink;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes cursorblink {
+    0%{
+        opacity: 0;
+    }            
+    25%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#box1_dynamic_content{
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+@media screen and (max-width:600px) {
+    #box1_fix_content{
+        font-size: 34px;
+    }
+    #cursor_blink{
+        font-size: 34px;
+    }
+    #box1_dynamic_content{
+        font-size: 34px;
+    }
+}
+#box1_content_para,#box1_content_para2{
+    /* margin-top: 140px; */
+    font-size: 17px;
+    font-weight: 100;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    color: white;
+}
+#box1_content_para2{
+    font-size: 20px;
+}
+
+#header_startnow_btn{
+    background: white;
+    color:rgba(78, 24, 221, 1);
+    width: 100px;
+    padding: 15px 85px;
+    text-decoration: none;
+    margin: 0 0 15px 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#header_startnow_btn:hover{
+    color: white;
+    background:rgb(53, 243, 180);
+}
+@media screen and (max-width:645px) {
+    #box1_left{
+        animation-name: goleft;
+        animation-duration: 2s;
+        width: auto;
+        animation-fill-mode: forwards;
+        text-align: center;
+    }
+    #body_box1 {
+        background-position: 30%;
+    }
+}
+@keyframes goleft {
+    0%{
+        margin-left: 80px;
+    }
+    100%{
+        padding-left: 15px;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:645px) {
+    #box1_left{
+        animation-name: goleft;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+}
+@keyframes goleft {
+    0%{
+        margin-left: 80px;
+    }
+    100%{
+        padding-left: 15px;
+        margin-left: 0px;
+    }
+}

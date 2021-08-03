@@ -1,0 +1,101 @@
+#box1_right{
+    height: 356px;
+    width: 556px;
+    float: right;
+    margin-right: 50px;
+    /* background: linear-gradient(rgb(255, 0, 255), rgb(102, 47, 255),rgb(47, 248, 255)); */
+    position: relative;
+    overflow: hidden;
+}
+#slide_img{
+    position: absolute;
+    margin:3px;
+    height: 350px;
+    width: 550px;
+    opacity: 1;
+    animation: slide  4s  1  backwards;
+}
+@keyframes slide {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+        filter: blur(5px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+}
+
+#box1_right span{
+    position: absolute;
+    transition: 0.4s;
+}
+#box1_right_span_1{
+    height: 3px;
+    width: 556px;
+    top: 0px;
+    background: linear-gradient(to right,rgb(255, 0, 255), rgb(129, 84, 255),rgb(109, 242, 247));
+    animation: animation1 4s ease-in-out  infinite ;
+}
+@keyframes animation1 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+#box1_right_span_2{
+    height: 356px;
+    width: 3px;
+    top: 0px;
+    left: 553px;
+    background: linear-gradient(to bottom,rgb(255, 0, 255), rgb(102, 47, 255),rgb(47, 248, 255));
+    animation: animation2 4s  ease-in-out infinite ;
+}
+@keyframes animation2 {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(100%);
+    }
+}
+#box1_right_span_3{
+    height: 3px;
+    width: 556px;
+    top: 353px;
+    background: linear-gradient(to left,rgb(255, 0, 255), rgb(102, 47, 255),rgb(47, 248, 255));
+    animation: animation3 4s  ease-in-out infinite ;
+}
+@keyframes animation3 {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#box1_right_span_4{
+    height: 356px;
+    width: 3px;
+    top: 0px;
+    background: linear-gradient(to top,rgb(255, 0, 255), rgb(102, 47, 255),rgb(47, 248, 255));
+    animation: animation4 4s  ease-in-out infinite ;
+}
+@keyframes animation4 {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+@media screen and (max-width:1265px) {
+    #box1_right{
+        display: none;
+    }
+}

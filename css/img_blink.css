@@ -1,0 +1,23 @@
+#img_blinkk{
+    margin-top: 100px;
+    width: 100%;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+#img_blinkk img{
+    width: 300px;
+    animation: imgblinkk 1s infinite;
+}
+@keyframes imgblinkk {
+    0%{
+        filter: saturate(0);
+    }    
+    60%{
+        filter: saturate(3);
+    }
+    100%{
+        filter: saturate(0);
+    }
+}
