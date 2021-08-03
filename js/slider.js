@@ -1,4 +1,4 @@
-var images=['images/colorball.jpg','images/camera.jpg','images/bluehall.jpg','images/car/ferrari2.jpg','images/leaf.jpg'];
+var images=['indeximg/colorball.jpg','indeximg/camera.jpg','indeximg/bluehall.jpg','indeximg/ferrari2.jpg','indeximg/leaf.jpg'];
 var imgcount=0;
 setTimeout(slide,3000);
 function slide(){
